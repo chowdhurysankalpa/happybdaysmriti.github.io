@@ -114,25 +114,42 @@
 }
 }
 
-@media (max-width: 650px){
+@media (max-width: 1000px){
     .dp{
-        top: 36px;
-        right: 230px;
+        top: 80px;
+        right: 110px; 
 }
     .dp img{
-        height: 110px;
-        width: 110px;
+        height: 150px;
+        width: 150px;
         border-radius: 50%;
         border: 5px solid white;
 }
+    .hey{
+        top: 150px;
+        right: 280px;
+}
     .hey p1{
-        font-size: 20px;
+        font-size: 22px;
 }
     .hey p2{
-        font-size: 30px;
+        font-size: 34px;
+}
+    .text-box{
+        width: 80%;
 }
     .text-box h1{
-        font-size: 20px;
+        font-size: 82px;
+}
+    .text-box p{
+        margin: 12px 0 20px;
+        font-size: 18px;
+}
+    .hero-btn{
+        padding: 10px 28px;
+        font-size: 12px;
 }
 }
+
+
     
