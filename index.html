@@ -8,6 +8,9 @@
     </head>
     <body>
         <section class="header">
+            <div class="preloader">
+                <div class="counter">0</div>
+            </div>
             <div class="dp">
                 <img src="images/smriti.jpg">
             </div>
@@ -29,6 +32,21 @@
                     <a href="https://www.instagram.com/direct/t/340282366841710300949128248825307850952" class="hero-btn"><b>Click here to go back to Instagram</b></a>
             </div>
         </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            function counter(){
+                var count = setInterval(function(){
+                    var c = parseInt($('.counter').text());
+                    $('.counter').text((++c).toString());
+                    if (c == 24){
+                        clearInterval(count);
+                        $('.counter').addClass('hide')
+                        $('.preloader').addClass('active')
+                        }                 
+                },60)
+            }
+            counter()
+        </script>
     </body>
 </html>
 
